@@ -26,7 +26,7 @@ Vagrant.configure("2") do |config|
       d.build_dir = "./plex"
       d.name = "plex"
       d.env = env_config
-      d.volumes = ["#{env['PLEX_SHARE']}:/media/"]
+      d.volumes = ["#{env_config['PLEX_SHARE']}:/media/"]
     end
   end
 end
